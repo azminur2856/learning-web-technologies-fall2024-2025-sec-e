@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Person Profile Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <table border="1" align="center" cellspacing="0" cellpadding="10">
+            <tr>
+                <td colspan="3" align="center"><b>PERSON PROFILE</b></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label>
+                    <input type="radio" name="gender" value="Other" id="other"><label for="other">Other</label>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="text" name="dob_day" required size="2">/
+                    <input type="text" name="dob_month" required size="2">/
+                    <input type="text" name="dob_year" required size="4">
+                    (dd/mm/yyyy)
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Blood Group:</td>
+                <td>
+                    <select name="blood_group">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Degree:</td>
+                <td>
+                    <input type="checkbox" name="degree" value="SSC" id="ssc"><label for="ssc">SSC</label>
+                    <input type="checkbox" name="degree" value="HSC" id="hsc"><label for="hsc">HSC</label>
+                    <input type="checkbox" name="degree" value="BSc" id="bsc"><label for="bsc">BSc</label>
+                    <input type="checkbox" name="degree" value="MSc" id="msc"><label for="msc">MSc</label>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Photo:</td>
+                <td><input type="file" name="photo"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right" colspan="2">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
