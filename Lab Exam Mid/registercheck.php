@@ -16,7 +16,7 @@
             echo "Passwords do not match!";
         } 
         elseif (isset($_SESSION['users'][$email])) {
-            echo "Email is already registered! <a href='login.html'>Login here</a>";
+            echo "Email is already registered! <a href='login.php'>Login here</a>";
         } 
         else {
             $_SESSION['users'][$email] = [
@@ -26,7 +26,7 @@
                 'gender' => $gender,
                 'password' => $password
             ];
-            echo "Registration successful! <a href='login.html'>Login here</a>";
+            echo "Registration successful! <a href='login.php'>Login here</a>";
         }
     } else {
         header('location: register.php');
