@@ -2,7 +2,7 @@
     session_start();
     require_once('../model/userModel.php');
     if(!isset($_SESSION['status'])){
-        header('location: login.html');  
+        header('location: login.php');  
     }
 
     if(isset($_REQUEST['id'])){
