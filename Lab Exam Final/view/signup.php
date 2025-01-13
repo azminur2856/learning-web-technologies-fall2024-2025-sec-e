@@ -3,21 +3,20 @@
 <html lang="en">
   <head>
     <title>Sign Up</title>
-    <script src="../js/signupCheck.js"></script>
+    <script src="../asset/js/signupCheck.js"></script>
   </head>  
 
   <body>
+  <h1 align="center">Sign Up</label></h1>
     <table align="center" width="100%">
       <tr>
-        <td width="50%" align="center">
+        <td>
           <form
             action="../controller/signupCheck.php"
             method="POST"
             onsubmit="return validateForm()"
           >
-          <div align="center" class="mainDiv">
-              <h1 align="center">Sign Up</label></h1>
-              <table>
+              <table align="center">
                 <!-- Form Error -->
                 <tr>
                   <td></td>
@@ -100,19 +99,16 @@
                   </td>
                 </tr>
               </table>
-            </div>
           </form>
+        </td>
+        <td>
+          <table align="center" id="jsError">
+              <ul id="errorList"></ul>
+          </table>
         </td>
       </tr>
     </table>
-    <!-- js error show -->
-    <div id="jsError">
-      <ul id="errorList">
-      </ul>
-    </div>
-
     <?php
-      // Clear session variables after rendering
       unset($_SESSION['form_error']);
       unset($_SESSION['name']);
       unset($_SESSION['name_error']);
