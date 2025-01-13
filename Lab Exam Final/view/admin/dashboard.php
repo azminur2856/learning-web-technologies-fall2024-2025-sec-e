@@ -13,10 +13,13 @@
           <td>
             <ul>
               <li class="dashboard-item">
+                <a href="viewDashboard.php">Dashboard</a>
+              </li>
+              <li class="dashboard-item">
                 <a href="registerAuthor.php">Register Author</a>
               </li>
               <li class="dashboard-item">
-                <a href="userlist.php">Update/Delete/Search</a>
+                <a href="userList.php">Update/Delete/Search</a>
               </li>
               <li class="dashboard-item">
                 <a href="../../controller/signout.php?msg=admin">Sign Out</a>
