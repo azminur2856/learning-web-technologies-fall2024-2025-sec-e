@@ -27,7 +27,6 @@
         }
     }
     
-    // User Sign In
     function signin($username, $password) {
         $con = getConnection();
 
@@ -46,6 +45,17 @@
             }
         } else {
             return ['status' => false];
+        }
+    }
+
+    function getUserByUsername($username){
+        $con = getConnection();
+        $sql = "SELECT * FROM Users WHERE username = '{$username}'";
+        $result = mysqli_query($con, $sql);
+        if($result && mysqli_num_rows($result) > 0){
+            return mysqli_fetch_assoc($result);
+        } else {
+            return null;
         }
     }
 ?>
