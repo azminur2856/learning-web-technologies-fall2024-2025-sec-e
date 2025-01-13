@@ -29,11 +29,11 @@
                 if($loginResult['type'] === 'admin'){
                     $_SESSION['adminStatus'] = true;
                     $_SESSION['adminUsername'] = $username;
-                    header('location: ../view/admin/dashboard.php');
+                    header('location: ../view/admin/viewDashboard.php');
                 }elseif($loginResult['type'] === 'author'){
                     $_SESSION['authorStatus'] = true;
-                    $_SESSION['authorEmail'] = $username;
-                    header('location: ../view/author/dashboard.php');
+                    $_SESSION['authorUsername'] = $username;
+                    header('location: ../view/author/viewDashboard.php');
                 }
             } else {
                 $_SESSION['username'] = $username;
